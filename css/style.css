@@ -1,0 +1,203 @@
+
+h1 {
+    
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+h2 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    border: 2px solid white;
+  padding: 30px;
+  margin: 70px;
+  color: blue;
+  text-align: center;
+  letter-spacing: 8px;
+  text-shadow: 2PX 2px lightskyblue;
+}
+
+
+.row {
+	margin-top: 12px;
+}
+
+.column {
+	display: inline-block;
+  text-align: center;
+}
+
+figure {
+	overflow: hidden;
+}
+a:hover {
+	text-decoration: none;
+}
+.column img {
+	display: block;
+	width: 100%;
+	height: 300px;
+}
+.column#caption {
+	position: relative;
+}
+.column#caption .text {
+		position: absolute;		
+    top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;			
+}
+.column#caption .text h1 {		
+		margin: 0;		
+		color: white;
+}
+.column#caption:hover .text {
+	opacity: 1;
+	
+}
+.column#caption:hover img {
+	-webkit-filter: sepia(90%);
+}
+
+
+.footer {
+  position: relative;
+  bottom: 0;
+   left: 0;
+   right: 0; 
+  margin: 0 auto;
+  text-align: center;
+  width: 100% ;
+background-color: lightgreen;
+
+}
+
+
+.hover-box {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Initial Setup of the Top and Bottom Borders on Hover */
+.hover-box:before {
+  border-top: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid #FFFFFF;
+  content: ''; 
+  z-index: 2;
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  right: 10px; 
+  bottom: 10px;
+  transform: scaleX(0); 
+  transition: all 0.5s ease; 
+  opacity: 0;
+}
+
+/* Initial Setup of the Left and Right Borders on Hover */
+.hover-box:after {
+  border-left: 1px solid rgb(105, 252, 8);
+  border-right: 1px solid rgb(104, 219, 248);
+  border-top:2px solid lavenderblush;
+  border-bottom: 2px solid darkkhaki;
+  background-size: 100% 2px;
+  content: ''; 
+  z-index: 2;
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  right: 10px; 
+  bottom: 10px;
+  transform: scaleY(0); 
+  transition: all 0.5s ease; 
+  opacity: 0;
+}
+
+/* Image Sizing Setup */
+.hover-box img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+/* Initial Setup of Box Content */
+.hover-box .hover-box-content {
+  position: absolute; 
+  top: 5%; 
+  left: 5%; 
+  width: 90%; 
+  height: 90%; 
+  overflow: hidden;
+  transition: all 0.5s ease; 
+  opacity: 1; 
+  z-index: 2;
+}
+
+/* Initial Setup of Box Content Title */
+.hover-box .hover-box-content .hover-box-title {
+  position: absolute; 
+  top: 20%; 
+  left: 0%; 
+  width: 100%; 
+  height: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  font-weight: normal; 
+  font-size: 20px;
+  transition: all 0.5s ease; 
+  opacity: 0; 
+  color: #FFFFFF;
+  letter-spacing: 4px;
+}
+
+/* Initial Setup of Box Content Description Paragraphs */
+.hover-box .hover-box-content .hover-box-desc {
+  position: absolute; 
+  bottom: 20%; 
+  left: 0%; 
+  width: 100%; 
+  height: auto;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: normal; 
+  font-size: 0.9rem;
+  transition: all 0.5s ease; 
+  opacity: 0; 
+  color: #FFFFFF;
+}
+
+/* Hover Effects on Image Styling */
+.hover-box:hover img {
+  transform: scale(1); 
+  filter: brightness(0.5);
+}
+
+/* Hover Effects to Display the Top and Bottom Borders */
+.hover-box:hover:before {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+/* Hover Effects to Display the Left and Right Borders */
+.hover-box:hover:after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+/* Hover Effects to Move the Title Position */
+.hover-box:hover .hover-box-content .hover-box-title {
+  top: 35%; 
+  opacity: 1;
+}
+
+/* Hover Effects to Move the Description Position */
+.hover-box:hover .hover-box-content .hover-box-desc {
+  bottom: 35%; 
+  opacity: 1;
+}

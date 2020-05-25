@@ -1,0 +1,47 @@
+h5{
+    font-weight: bold;
+    text-align: center;
+    color: crimson;
+    font-size: 50px;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+    background-color: lightpink;
+    padding: 10px;
+    box-shadow: lightpink;
+  }
+
+  body {
+    background: linear-gradient(320deg, #26d5db, #b4f096);
+   
+}
+
+
+.myborder1{
+    padding: 30px;
+    border: 1px;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px greenyellow;
+      padding: 30px;
+  margin: 70px;
+  color: rgb(6, 134, 253);
+  text-align: center;
+  letter-spacing: 8px;
+  word-spacing: 20px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0; left: 0; 
+  margin: 0 auto ;
+  text-align: center;
+  width: 100% ;
+
+}
+
+
+  
